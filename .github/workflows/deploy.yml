@@ -2,7 +2,7 @@ name: Desplegando pagina estatica en S3
 on:
  push:
    branches:
-     - main  # Change to your default branch
+     - pablodevops  # Change to your default branch
 
 
 jobs:
@@ -15,7 +15,7 @@ jobs:
        uses: actions/checkout@v4
 
 
-     - name: Set up AWS CLI
+     - name: Set up AWS CLI 2 😈
        uses: aws-actions/configure-aws-credentials@v4
        with:
          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
